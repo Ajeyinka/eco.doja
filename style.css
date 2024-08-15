@@ -676,13 +676,13 @@
     color: var(--bg-clr);
   }
 
-  .testiomonial{
+  .testiomo{
     background: var(--bg-clr);
     padding: 30px;
     border-radius: 16px;
   }
 
-  .testiomonial p{
+  .testiomo p{
     margin-bottom: 20px;
   }
 
@@ -704,7 +704,7 @@
 
 .ggs{
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 2fr;
     gap:40px;
     position: relative;
 }
@@ -726,6 +726,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
     
     
     
@@ -860,8 +861,8 @@
   @media screen and (max-width:1000px){
     .carousel .testiony{
       
-        min-width:calc(100%/2.2);
-        max-width: calc(100%/2.2);
+        min-width:calc(100%);
+        max-width: calc(100%);
     }
 
     .carousel .testiony img{
@@ -874,8 +875,8 @@
   @media screen and (max-width:550px){
     .carousel .testiony{
       
-        min-width:calc(100%/2);
-        max-width:calc(100%/2);
+        min-width:calc(100%);
+        max-width:calc(100%);
     }
     .carousel .testiony img{
       width:100%;
@@ -896,6 +897,18 @@
     top:90%;
     transition: rotate 800ms ease-in, opacity 400ms ease-in;
    }
+   .testimonial-componet{
+    
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+    
+    
+    
+  }
   }
   
   
@@ -1153,6 +1166,20 @@
   .slider label{
     width:0px;
   }
+
+
+  @media(max-width:800px){
+    .slide {
+      width:20%;
+      transition: 2s;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: rgba(0, 0, 0, 0.48);
+      color: var(--bg-clr);
+      border-radius: 20px;
+    }
+  
+  }
   
   
   .navigation-manual{
@@ -1244,7 +1271,7 @@
       position: absolute;
       width: 100%;
       bottom: 20px;
-      left:0px;
+      left:100px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1260,7 +1287,7 @@
     }
     
     .manual-btn:not(:last-child){
-      margin-right: 40px;
+      margin-right: 10px;
     }
     
     .manual-btn:hover{
@@ -1285,7 +1312,7 @@
       position: absolute;
       width: 100%;
       bottom: 20px;
-      left:0px;
+      left:100px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1310,7 +1337,7 @@
   }
   
   .navigation-auto div:not(:last-child){
-      margin-right: 40px;
+      margin-right: 10px;
   }
   
   
@@ -1889,7 +1916,7 @@ input{
   @media(max-width:800px){
     .container_large :has(.footer){
     
-      margin-inline: 20px;
+      margin-inline: 0px;
       border-radius: 10px;
     }
   
@@ -1901,7 +1928,7 @@ input{
   
     .padding_global :has(.footer) {
       padding-inline: 20px;
-      padding-block: 20px;
+      padding-block: 40px;
       margin-inline: 0px;
       
       }
@@ -1909,7 +1936,7 @@ input{
   
     .footer{
       background: var(--bg-clr);
-      padding: 20px;
+      padding: 10px;
       border-radius: 20px;
       margin: 0px;
       display: grid;
