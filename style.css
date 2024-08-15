@@ -657,7 +657,7 @@
     max-width: 900px;
     margin-inline: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
     gap:30px;
   }
 
@@ -678,7 +678,7 @@
   }
 
   .testiomo{
-    background: red;
+    background: var(--bg-clr);
     padding: 20px;
     border-radius: 16px;
     max-width: 100%;
@@ -1063,7 +1063,7 @@
   .teamed{
     display: grid;
     margin-top: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap:20px;
   }
 
