@@ -678,7 +678,7 @@
   }
 
   .testiomo{
-    background: var(--red-clr);
+    background: red;
     padding: 20px;
     border-radius: 16px;
     max-width: 100%;
