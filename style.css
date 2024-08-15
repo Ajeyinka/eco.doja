@@ -1146,7 +1146,7 @@
     transition: 2s;
     padding: 60px;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.48);
+    background-image: url(asssets/herobg.png);
     color: var(--bg-clr);
     border-radius: 20px;
   }
@@ -1219,9 +1219,7 @@
   #radio3:checked ~ .first{
     margin-left: -40%;
   }
-  #radio4:checked ~ .first{
-    margin-left: -60%;
-  }
+ 
   
   .navigation-auto{
     position: absolute;
@@ -1259,8 +1257,8 @@
 
 #radio1:checked ~ .navigation-auto .auto-btn1:after,
 #radio2:checked ~ .navigation-auto .auto-btn2:after,
-#radio3:checked ~ .navigation-auto .auto-btn3:after,
-#radio4:checked ~ .navigation-auto .auto-btn4:after
+#radio3:checked ~ .navigation-auto .auto-btn3:after
+
 {
      content: url(asssets/checked.svg);
 }
@@ -1304,9 +1302,7 @@
     #radio3:checked ~ .first{
       margin-left: -40%;
     }
-    #radio4:checked ~ .first{
-      margin-left: -60%;
-    }
+   
     
     .navigation-auto{
       position: absolute;
@@ -1344,8 +1340,8 @@
   
   #radio1:checked ~ .navigation-auto .auto-btn1:after,
   #radio2:checked ~ .navigation-auto .auto-btn2:after,
-  #radio3:checked ~ .navigation-auto .auto-btn3:after,
-  #radio4:checked ~ .navigation-auto .auto-btn4:after
+  #radio3:checked ~ .navigation-auto .auto-btn3:after
+ 
   {
        content: url(asssets/checked.svg);
   }
