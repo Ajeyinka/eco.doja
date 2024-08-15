@@ -661,7 +661,7 @@
   }
 
 
-  .pattern{
+  .patterned{
     background-image: url(asssets/pattern-dark.png);
     padding: 80px 20px;
     border-radius: 30px;
@@ -678,8 +678,9 @@
 
   .testiomo{
     background: var(--bg-clr);
-    padding: 30px;
+    padding: 20px;
     border-radius: 16px;
+    max-width: 100%;
   }
 
   .testiomo p{
@@ -1205,9 +1206,7 @@
     margin-right: 40px;
   }
   
-  .manual-btn:hover{
-      
-  }
+  
   
   #radio1:checked ~ .first{
     margin-left: 0px;
@@ -1716,7 +1715,130 @@ input{
     border-radius: 0px;
     
   }
+@media(max-width:900px){
+  .contact-flex{
+    
+    grid-template-columns: 1fr;
+   
+    
+  }
 
+  
+
+
+.form{
+  background-image: url(asssets/formbg.png);
+  padding: 20px;
+}
+
+
+form{
+  margin-top: 20px;
+}
+
+  fieldset {
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 600;
+    font-family: var(--ff-1);
+    
+  }
+
+  label :first-child:after { 
+    content:"*";
+    color: red;
+   }
+
+  
+input{
+    width:100%;
+    margin-top: 8px;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    border: 0px solid var(--pri-clr);
+    border-radius: 4px;
+    background-color: var(--accent-clr);
+    color: white;
+    font-size: 16px;
+  }
+ .pro input[type = submit]{
+    max-width: 200px;
+    background-color: var(--accent-clr);
+    color: white;
+    transition: background 500ms ease-in;
+  }
+  
+
+  ::placeholder {
+    color: white;
+    font-size: 14px;
+  }
+  
+   input:focus {
+    background-color: var(--accent-clr);
+    
+  }
+  .pro{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:0px;
+    font-weight: 400;
+    font-family: var(--ff-2);
+  }
+  textarea {
+    margin-top: 8px;
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid var(--pri-clr);
+    border-radius: 4px;
+    background-color: var(--bg-clr);
+    color: var(--pri-clr);
+    font-size: 16px;
+    resize: none;
+    font-weight: 400;
+    font-family: var(--ff-2);
+    
+  }
+  
+
+
+  select {
+    margin: 0px 0 0 0;
+    width: 100%;
+  }
+  
+ 
+  
+  select{
+     
+    appearance: none;
+    /* safari */
+    -webkit-appearance: none;
+    /* other styles for aesthetics */
+    width: 100%;
+    font-size: 1.15rem;
+    padding: 0.675em 6em 0.675em 1em;
+   
+    border-radius: 0px;
+    color:white;
+    cursor: pointer;
+    background-color: var(--accent-clr);
+    border: 1px solid #F0F0F0;
+    border-radius: 0px;
+    
+  }
+
+
+}
 
   .fleee{
     display: flex;
@@ -1914,6 +2036,12 @@ input{
 
 
   @media(max-width:800px){
+
+    .patterned{
+      background-image: url(asssets/pattern-dark.png);
+      padding: 20px;
+      border-radius: 20px;
+    }
     .container_large :has(.footer){
     
       margin-inline: 0px;
