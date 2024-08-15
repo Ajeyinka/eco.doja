@@ -181,12 +181,13 @@
     padding: 20px 40px;
     margin-top: 0px;
     
-    position: absolute;
+    position: fixed;
     left:50%;
     transform: translateX(-50%);
     top:0px;
     width:100%;
     z-index: 3;
+    background: var(--bg-clr);
    
    
   /* background: rgba(255, 255, 255, 0.08);
@@ -2111,4 +2112,14 @@ input{
     .termss p{
       font-size: 14px;
     }
+  }
+
+
+  .testiomo svg{
+    border: 1px solid red;
+
+  }
+
+  .testimo img{
+    border: 1px solid yellow;
   }
