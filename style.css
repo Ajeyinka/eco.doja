@@ -756,7 +756,7 @@
   .wrapper .left{
    left:40px;
    rotate: 180deg;
-   display: none;
+  
   }
   
   
@@ -1057,6 +1057,10 @@
 
   .teams h2{
     font-size: var(--fs-1);
+    color: var(--sec-clr);
+  }
+
+  .eex{
     color: var(--sec-clr);
   }
 
@@ -1469,24 +1473,21 @@
 
 
 
-  .container_large :has(.footer){
-    
-    margin-inline: 40px;
+  footer{
+    max-width: 1200px;
+    margin-inline: auto;
     border-radius: 20px;
   }
 
 
   .bg-foot{
     background-image: url(asssets/Footer.png);
+    padding-inline: 40px;
+    padding-block: 40px;
    
   }
 
-  .padding_global :has(.footer) {
-    padding-inline: 40px;
-    padding-block: 40px;
-    margin-inline: 0px;
-    
-    }
+  
   
 
   .footer{
@@ -1567,6 +1568,15 @@
   }
 
   @media(max-width:800px){
+
+    .bg-foot{
+      background-image: url(asssets/Footer.png);
+      padding: 20px;
+     
+     
+    }
+
+    
     .fle{
       display: flex;
       align-items: start;
@@ -2039,17 +2049,7 @@ input{
       padding: 20px;
       border-radius: 20px;
     }
-    .container_large :has(.footer){
-    
-      margin-inline: 0px;
-      border-radius: 10px;
-    }
-  
-  
-    .bg-foot{
-      background-image: url(asssets/Footer.png);
-     
-    }
+   
   
     .padding_global :has(.footer) {
       padding-inline: 20px;
@@ -2061,7 +2061,7 @@ input{
   
     .footer{
       background: var(--bg-clr);
-      padding: 10px;
+      padding: 20px;
       border-radius: 20px;
       margin: 0px;
       display: grid;
@@ -2081,6 +2081,7 @@ input{
   
     .footer p{
       font-size: 14px;
+      max-width: 70%;
     }
   
     .footer img{
@@ -2088,6 +2089,7 @@ input{
     }
   
     .footer .icons{
+      margin-top: 20px;
       display: flex;
       gap:20px;
   
