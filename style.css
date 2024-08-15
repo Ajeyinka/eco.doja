@@ -115,7 +115,7 @@
   background: var(--pri-clr);
   }
   
-  img {
+  img, svg {
     
     display: block;
     object-fit: cover;
