@@ -23,7 +23,7 @@ forEach(link => {
   })
 
 
-  let valueDisplays = document.querySelectorAll (".num");
+  /* let valueDisplays = document.querySelectorAll (".num");
     let interval = 4000;
     valueDisplays.forEach((valueDisplay) => {
       let startValue = 0;
@@ -96,3 +96,4 @@ forEach(link => {
         carousel.addEventListener("touchend", dragStop);
         
 
+ */
