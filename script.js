@@ -13,14 +13,7 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0]
 
 
         
-    const activePage = window.location.pathname;
-const activeNav = document.querySelectorAll('.ava').
-forEach(link => {
-    if(link.href.includes(`${activePage}`)){
-      link.classList.add('navactive');
-      
-    }
-  })
+
 
 
   let valueDisplays = document.querySelectorAll (".num");
@@ -96,3 +89,18 @@ forEach(link => {
         carousel.addEventListener("touchend", dragStop);
         
 
+
+
+
+
+
+
+
+const activePage = window.location.pathname;
+const activeNav = document.querySelectorAll('.ava').
+forEach(link => {
+    if(link.href.includes(`${activePage}`)){
+      link.classList.add('navactive');
+      
+    }
+  })
