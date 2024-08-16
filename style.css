@@ -578,6 +578,7 @@
     font-size: 16px;
     line-height: 1.8;
     transition: all 800ms ease-out;
+    font-weight: 300;
   }
 
   .why:hover{
@@ -1071,9 +1072,14 @@
     gap:20px;
   }
 
+  .member .name{
+    font-family: var(--ff-2);
+  }
+
   .player > .name{
      margin-top: 8px;
      margin-bottom: 0px;
+     font-family: var(--ff-2);
   }
 
 
@@ -2117,4 +2123,8 @@ input{
 
   .bg-larged{
     background-image: url(asssets/bgbig.png);
+  }
+
+  h3{
+    font-family: var(--ff-2);
   }
